@@ -1,0 +1,32 @@
+Source: libcutiewaydroid
+Section: libs
+Maintainer: Mathew Dennis
+Priority: optional
+Build-Depends: pkg-kde-tools,
+               cmake,
+               qt6-base-dev,
+               qt6-declarative-dev,
+               pkg-config,
+Standards-Version: 4.5.1
+
+Package: libcutiewaydroid
+Architecture: any
+Multi-Arch: foreign
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Recommends: waydroid
+Description: This package contains a Waydroid lifecycle/app-list helper library for Cutie.
+
+Package: libcutiewaydroid-dev
+Architecture: any
+Multi-Arch: foreign
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, libcutiewaydroid (= ${binary:Version})
+Description: This package contains a Waydroid lifecycle/app-list helper library for Cutie. (Development headers)
+
+Package: qml6-module-cutiewaydroid
+Architecture: any
+Multi-Arch: foreign
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, libcutiewaydroid (= ${binary:Version})
+Description: This package contains a Waydroid lifecycle/app-list helper library for Cutie. (QML module)

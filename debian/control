@@ -1,6 +1,6 @@
 Source: libcutiewaydroid
 Section: libs
-Maintainer: Mathew Dennis
+Maintainer: Mathew Dennis <mathewdennis693@gmail.com>
 Priority: optional
 Build-Depends: pkg-kde-tools,
                cmake,
